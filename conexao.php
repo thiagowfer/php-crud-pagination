@@ -2,7 +2,7 @@
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$dbname = 'celke';
+$dbname = 'agenda';
 
 $conn = mysqli_connect($host, $user, $password, $dbname);
 
