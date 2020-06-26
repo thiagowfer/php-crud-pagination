@@ -11,6 +11,7 @@
 <body>
 
 <a href="cadastrar.php">Cadastrar</a>
+<a href="pesquisar.php">Pesquisar</a> <br>
 
 <h1>Lista de Usuários</h1>
 <?php 

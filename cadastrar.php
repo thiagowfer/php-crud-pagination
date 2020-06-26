@@ -10,6 +10,9 @@
 </head>
 <body>
 
+<a href="index.php">Home </a> 
+<a href="pesquisar.php">Pesquisar </a> <br>
+
 <h1>Cadastrar Usuário</h1>
 <?php 
     if(isset($_SESSION['msg'])){
