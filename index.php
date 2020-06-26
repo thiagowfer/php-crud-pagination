@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<?php include_once "conexao.php"; ?>
+<?php include_once "config/conexao.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +40,7 @@
         echo "Nome: " .$row_usuarios['nome']. "<br>";
         echo "Email: " .$row_usuarios['email']. "<br>";
         echo "<a href='editar.php?id="  .$row_usuarios['id']. "'> Editar </a>";
-        echo "<a href='function-delete.php?id=" .$row_usuarios['id']. "'>Apagar</a>";
+        echo "<a href='functions/function-delete.php?id=" .$row_usuarios['id']. "'>Apagar</a>";
         echo "<hr>";
     }
 

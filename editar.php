@@ -1,6 +1,6 @@
 <?php 
 session_start(); 
-include_once "conexao.php"; 
+include_once "config/conexao.php"; 
 
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
@@ -27,7 +27,7 @@ $row_usuario = mysqli_fetch_assoc($resultado);
     }
 ?>
 
-<form action="function-editar.php" method="post">
+<form action="functions/function-editar.php" method="post">
 <input type="hidden" name="id" value="<?php echo $row_usuario['id']; ?>">
     <label for="nome">Nome: </label>
     <input type="text" name="nome" placeholder="Digite o nome completo" 

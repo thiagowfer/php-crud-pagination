@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include_once "conexao.php";
+include_once "../config/conexao.php";
 
 $id = filter_input(INPUT_POST, 'id', FILTER_SANITIZE_NUMBER_INT);
 $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
@@ -13,10 +13,10 @@ $resultado = mysqli_query($conn, $inserir);
 
 if(mysqli_affected_rows($conn)){
     $_SESSION['msg'] = "<p style='color: green; font-weight:bold;'> Usuário atualizado com sucesso! </p>";
-    header("Location: listar.php");
+    header("Location: ../index.php");
 } else {
     $_SESSION['msg'] = "<p style='color:red;'> Erro ao tentar atualizar </p>";
-    header("Location: editar.php?id=$id");
+    header("Location: ../editar.php?id=$id");
 }
 
 ?>

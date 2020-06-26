@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<?php include_once "conexao.php"; ?>
+<?php include_once "config/conexao.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +18,7 @@
     }
 ?>
 
-<form action="function-cadastrar.php" method="post">
+<form action="functions/function-cadastrar.php" method="post">
     <label for="nome">Nome: </label>
     <input type="text" name="nome" placeholder="Digite o nome completo" required="required"><br> <br>
 
