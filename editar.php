@@ -4,9 +4,9 @@ include_once "config/conexao.php";
 
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
-$query = "SELECT * FROM usuarios WHERE id = '$id'";
-$resultado = mysqli_query($conn, $query);
-$row_usuario = mysqli_fetch_assoc($resultado);
+$sql = "SELECT * FROM usuarios WHERE id = '$id'";
+$execute = mysqli_query($conn, $sql);
+$row_usuario = mysqli_fetch_assoc($execute);
 
 ?>
 
