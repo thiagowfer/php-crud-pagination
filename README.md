@@ -1,3 +1,3 @@
-# CRUD PHP + Pagination
+# CRUD PHP + MYSQLI with pagination and search
 
-CRUD with PHP + Mysqli, with pagination, need stome css style.
+CRUD with PHP + Mysqli, pagination and search, no frameworks, simple pure PHP without any css
